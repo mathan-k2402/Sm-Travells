@@ -1,0 +1,113 @@
+* { box-sizing: border-box; margin: 0; padding: 0; font-family: Arial, sans-serif; }
+body { line-height: 1.6; }
+
+header {
+  background: #005f73; color: #fff;
+  display: flex; justify-content: space-between;  align-items: center;
+  padding: 0.5em 1em;
+}
+.navbar{
+   background: #005f73;
+}
+header .logo { font-weight: bold; font-size: 1.5em; }
+header nav ul { list-style: none; display: flex; gap: 1em; }
+header nav a { color: #fff; text-decoration: none; }
+header nav a:hover { text-decoration: underline; }
+
+main { padding: 1em; }
+.hero { text-align: center; padding: 2em 0; background: #e0fbfc; }
+.hero-images { display: flex; gap: 1em; justify-content: center; margin-top: 1em; }
+.hero-images img { max-width: 45%; border-radius: 8px; }
+
+section { margin: 2em 0; }
+.gallery { display: flex; gap: 1em; justify-content: center; }
+.vehicle { text-align: center; }
+.vehicle img { max-width: 300px; border: 2px solid #ccc; border-radius: 8px; }
+
+form {
+  max-width: 500px; margin: 0 auto;
+  display: grid; gap: 1em;
+}
+form label { display: flex; flex-direction: column; }
+form input, form select, form button {
+  padding: 0.5em; font-size: 1em; margin-top: 0.3em;
+  border: 1px solid #ccc; border-radius: 4px;
+}
+form button {
+  background: #008891; color: #fff; border: none;
+  cursor: pointer;
+}
+form button:hover { background: #005f73; }
+
+#bookingMessage { text-align: center; margin-top: 1em; }
+
+footer {
+  background: #005f73; color: #fff;
+  text-align: center; padding: 1em 0;
+}
+
+
+/* Mobile devices (max-width: 768px) */
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  header nav ul {
+    flex-direction: column;
+    gap: 0.5em;
+    margin-top: 0.5em;
+  }
+
+  .hero-images {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-images img {
+    max-width: 90%;
+  }
+
+  .gallery {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .vehicle img {
+    max-width: 90%;
+  }
+
+  form {
+    width: 100%;
+    padding: 0 1em;
+  }
+}
+
+/* Very small screens (max-width: 480px) */
+@media screen and (max-width: 480px) {
+  header .logo {
+    font-size: 1.2em;
+  }
+
+  header nav ul {
+    font-size: 0.9em;
+  }
+
+  form input, form select, form button {
+    font-size: 0.9em;
+  }
+
+  section h2 {
+    font-size: 1.3em;
+  }
+
+  .hero h1 {
+    font-size: 1.5em;
+  }
+
+  .hero p {
+    font-size: 1em;
+  }
+}
+

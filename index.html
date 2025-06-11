@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SM Travels</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+
+
+
+  <nav class="navbar navbar-expand-lg navbar-dark ">
+    <div class="container">
+      <a class="navbar-brand" href="#">SM Travels</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#vehicles">Our Vehicles</a></li>
+          <li class="nav-item"><a class="nav-link" href="#booking">Booking</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- Home -->
+  <section id="home" class="hero">
+    <h1>Welcome to SM Travels</h1>
+    <p>Your trusted partner for safe & comfortable rides</p>
+    <div class="hero-images">
+      <img src="images/car1.jpg" alt="Taxi Car">
+      <img src="images/van2.jpg" alt="Travel Van">
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <h2>About Us</h2>
+    <p>SM Travels is a reliable travel service based in Tamil Nadu. We offer well-maintained cars and spacious vans with
+      experienced drivers for local or outstation journeys. Safety, punctuality, and comfort are our priorities.</p>
+  </section>
+
+  <!-- Our Vehicles -->
+  <section id="vehicles">
+    <h2>Our Vehicles</h2>
+    <div class="gallery">
+      <div class="vehicle">
+        <img src="images/car2.jpg" alt="Comfortable Car">
+        <p>Comfortable AC Cars</p>
+      </div>
+      <div class="vehicle">
+        <img src="images/van.jpg" alt="Force Traveller Van">
+        <p>Spacious Force Traveller Vans</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Booking -->
+  <section id="booking">
+    <h2>Book Your Ride</h2>
+    <form id="bookingForm">
+      <label>Full Name<input type="text" name="name" required></label>
+      <label>Phone Number<input type="tel" name="phone" required></label>
+      <label>Pickup Date<input type="date" name="date" required></label>
+      <label>Pickup Time<input type="time" name="time" required></label>
+      <label>Pickup Location<input type="text" name="pickup" required></label>
+      <label>Drop Location<input type="text" name="drop" required></label>
+      <label>Vehicle Type
+        <select name="vehicle">
+          <option value="car">Car</option>
+          <option value="van">Van</option>
+        </select>
+      </label>
+      <button type="submit">Submit Booking</button>
+    </form>
+    <div id="bookingMessage"></div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>📞 <a href="tel:+919003583695">+91 90035 83695</a></p>
+    <p>✉️ <a href="mailto:smtravels@example.com">smtravels@example.com</a></p>
+    <p>📍 Thanjavur, Tamil Nadu, India</p>
+  </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Designed By Parasuraman</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
